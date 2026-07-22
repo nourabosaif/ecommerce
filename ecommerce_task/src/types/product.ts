@@ -21,3 +21,9 @@ export interface Filters {
   minPrice: number | null;
   maxPrice: number | null;
 }
+
+export interface Category {
+  slug: string;
+  name: string;
+  url: string;
+}
