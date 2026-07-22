@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import {ProductListingPage} from './pages/ProductListingPage'
 import './App.css'
 
 function App() {
@@ -6,7 +7,7 @@ function App() {
 
   return (
     <>
-      
+      <ProductListingPage />
     </>
   )
 }
