@@ -1,5 +1,5 @@
 import axios from "axios";
-import type { Product, ProductsResponse } from "../types/product";
+import type { Product,Category, ProductsResponse } from "../types/product";
 
 const BASE_URL = "https://dummyjson.com/products";
 
@@ -35,7 +35,8 @@ export async function getProducts({
   return data;
 }
 
-export async function getCategories(): Promise<string[]> {
-  const { data } = await axios.get<string[]>(`${BASE_URL}/categories`);
+
+export async function getCategories(): Promise<Category[]> {
+  const { data } = await axios.get<Category[]>(`${BASE_URL}/categories`);
   return data;
 }
